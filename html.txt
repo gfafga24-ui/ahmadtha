@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
+
+<h2>الرسالة بدها باسورد و
+your university number might open this❤️</h2>
+
+<input type="password" id="pass">
+<button onclick="checkPass()">Open</button>
+
+<p id="message"></p>
+
+<script>
+function checkPass() {
+  var password = document.getElementById("pass").value;
+
+  if(password === "171710") {
+    document.body.innerHTML = `
+      <h1>❤️</h1>
+      <h2> هاي الرسالة إلك</h2>
+      <p>
+      بدي تعرفي انه قد ما بعدني الانشغال والامتحانات في الايام اللي جاي لازم تعرفي انه هو طريق عشان اوصلك ….اما الرقم الجامعي انا اسف بس هو الاشي اللي لقيته بتقدري تعرفيه لاني حفظته من قوائم المشاريع
+      </p>
+    `;
+  } else {
+    document.getElementById("message").innerText = "Wrong password";
+  }
+}
+</script>
+
+</body>
+</html>
